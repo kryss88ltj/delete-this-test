@@ -1,0 +1,557 @@
+/******************/
+/*   Bottom Nav   */
+/******************/
+body {
+  -webkit-transition: all 1s ease-in-out .25s;
+}
+
+#scroll-nav {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+  
+  #scroll-nav ul {
+    float: left;
+    padding: 0;
+  }
+
+  #scroll-nav ul li {
+    list-style-type: none;
+    border-left: 1px solid #fff;
+    position: relative;
+  }
+
+  #scroll-nav ul li a {
+    position: relative;
+    display: block;
+  }
+
+  #scroll-nav ul li h5 {
+    text-transform: uppercase;
+    font-family: "brandon_grotesquethin";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 89%;
+    padding-left: 5%;
+    margin: .75em 0;
+    letter-spacing: .08em;
+    line-height: 24px;
+  }
+
+  .top-title-line {
+    margin: 3.3125em auto 0;
+    display: table;
+  }
+  
+  .bottom-title-line {
+    margin: .625em auto 0;
+    display: table;
+  }
+
+  #scroll-nav h4 {
+    font-size: 24px;
+    color: #fff;
+    font-family: "brandon_grotesquemedium";
+    text-transform: uppercase;
+    text-align: center;
+    float: left;
+  }
+
+  .nav {
+    float: left;
+    width: 187px;
+    height: 540px;
+    position: relative;
+    /*-webkit-transition: width .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;*/
+  }
+
+  .nav:hover {
+    /*width: 220px;*/
+  }
+
+  .nav h5 {text-transform: uppercase;}
+
+  /****************************************/
+  /* Scrolling Nav Individual Positioning */
+  /****************************************/
+
+  .mauve-nav .top-scroll-text {
+    position: absolute;
+    top: 15px;
+  }
+
+  .mauve-nav {
+    border-left: none;
+  }
+
+  .mauve-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 48px;
+  }
+
+  .mauve-nav .icon {
+    position: absolute;
+    top: 225px;
+    left: 64px;
+  }
+
+  .magenta-nav .top-scroll-text {
+    position: absolute;
+    top: 29px;
+  }
+  
+  .magenta-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 32px;
+  }
+
+  .magenta-nav .icon {
+    position: absolute;
+    top: 225px;
+    left: 39px;
+  }
+
+  .crimson-nav h5 {
+    width: 81% !important;
+    margin-left: .6em !important;
+  }
+
+  .crimson-nav .top-scroll-text {
+    position: absolute;
+    top: 15px;
+  }
+
+  .crimson-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 33px;
+  }
+
+  .crimson-nav .icon {
+    position: absolute;
+    top: 225px;
+    left: 51px;
+  }
+
+  .scarlet-nav .top-scroll-text {
+    position: absolute;
+    top: 30px;
+    left: -9px;
+  }
+
+  .scarlet-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 39px;
+  }
+
+  .scarlet-nav .icon {
+    position: absolute;
+    top: 225px;
+    left: 28px;
+  }
+
+  .scarlet-nav h5 {
+    width: 93% !important;
+  }
+
+  .poster-red-nav .top-scroll-text {
+    position: absolute;
+    top: 23px;
+  }
+
+  .poster-red-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 18px;
+    width: 152px;
+  }
+
+  .poster-red-nav .icon {
+    position: absolute;
+    top: 225px;
+    left: 36px;
+  }
+
+  .coral-nav .top-scroll-text {
+    position: absolute;
+    top: 0px;
+  }
+
+  .coral-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 50px;
+  }
+
+  .coral-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .orange-nav .top-scroll-text {
+    position: absolute;
+    top: 0px;
+  }
+
+  .orange-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 39px;
+  }
+
+  .orange-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .amber-nav .top-scroll-text {
+    position: absolute;
+    top: 25px;
+  }
+
+  .amber-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 47px;
+  }
+
+  .amber-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .gold-nav .top-scroll-text {
+    position: absolute;
+    top: 0px;
+  }
+
+  .gold-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 54px;
+  }
+
+  .gold-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 56px;
+  }
+
+  .yellow-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .yellow-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 42px;
+  }
+
+  .yellow-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .lime-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .lime-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 59px;
+  }
+
+  .lime-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .leaf-green-nav .top-scroll-text {
+    position: absolute;
+    top: 13px;
+  }
+
+  .leaf-green-nav h4 {
+    width: 151px;
+    position: absolute;
+    top: 154px;
+    left: 18px;
+  }
+  .leaf-green-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .sea-green-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .sea-green-nav h4 {
+    width: 151px;
+    position: absolute;
+    top: 154px;
+    left: 19px;
+  }
+
+  .sea-green-nav .icon {
+    width: 55px;
+    position: absolute;
+    top: 225px;
+    left: 60px;
+  }
+
+  .emerald-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .emerald-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 35px;
+  }
+
+  .emerald-nav .icon {
+    width: 55px;
+    position: absolute;
+    top: 225px;
+    left: 61px;
+  }
+
+  .teal-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .teal-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 59px;
+  }
+
+  .teal-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 53px;
+  }
+
+  .cyan-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .cyan-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 60px;
+  }
+
+  .cyan-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .sky-blue-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .sky-blue-nav h4 {
+    width: 114px;
+    position: absolute;
+    top: 154px;
+    left: 38px;
+  }
+
+  .sky-blue-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .ultramarine-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .ultramarine-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 9px;
+    letter-spacing: -.6px;
+  }
+
+  .ultramarine-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 54px;
+  }
+
+  .violet-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .violet-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 48px;
+  }
+
+  .violet-nav .icon {
+    width: 70px;
+    position: absolute;
+    top: 225px;
+    left: 52px;
+  }
+
+  .purple-nav .top-scroll-text {
+    position: absolute;
+    top: 24px;
+  }
+
+  .purple-nav h4 {
+    position: absolute;
+    top: 154px;
+    left: 45px;
+  }
+
+  .purple-nav .icon {
+    width: 120px;
+    position: absolute;
+    top: 203px;
+    left: 27px;
+  }
+
+
+  .mauve-nav .bottom-scroll-text, 
+  .magenta-nav .bottom-scroll-text, 
+  .crimson-nav .bottom-scroll-text, 
+  .scarlet-nav .bottom-scroll-text, 
+  .poster-red-nav .bottom-scroll-text,  
+  .coral-nav .bottom-scroll-text, 
+  .orange-nav .bottom-scroll-text, 
+  .amber-nav .bottom-scroll-text, 
+  .gold-nav .bottom-scroll-text, 
+  .yellow-nav .bottom-scroll-text, 
+  .lime-nav .bottom-scroll-text, 
+  .leaf-green-nav .bottom-scroll-text, 
+  .sea-green-nav .bottom-scroll-text, 
+  .emerald-nav .bottom-scroll-text, 
+  .teal-nav .bottom-scroll-text, 
+  .cyan-nav .bottom-scroll-text, 
+  .sky-blue-nav .bottom-scroll-text, 
+  .ultramarine-nav .bottom-scroll-text, 
+  .violet-nav .bottom-scroll-text, 
+  .purple-nav .bottom-scroll-text {
+    position: absolute;
+    top: 35px;
+  } 
+
+  .mauve-nav {background: #b41e8e;}
+  .magenta-nav {background: #ec008c;}
+  .crimson-nav {background: #ea1378;}
+  .scarlet-nav {background: #ed145b;}
+  .poster-red-nav {background: #ea1b3b;}
+  .coral-nav {background: #ed1c24;}
+  .orange-nav {background: #f37021;}
+  .amber-nav {background: #faa61a;}
+  .gold-nav {background: #ffcb05;}
+  .yellow-nav {background: #fff200;}
+  .lime-nav {background: #50b848;}
+  .leaf-green-nav {background: #00a651;}
+  .sea-green-nav {background: #00a46b;}
+  .emerald-nav {background: #00a99d;}
+  .teal-nav {background: #00accd;}
+  .cyan-nav {background: #00aeef;}
+  .sky-blue-nav {background: #0089cf;}
+  .ultramarine-nav {background: #0066b3;}
+  .violet-nav {background: #2e3192;}
+  .purple-nav {background: #6f2c91;}
+  
+
+
+  .creators {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #a9a3a1;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'brandon_grotesquelight';
+  }
+
+  .creators p {
+    display: inline;
+    margin: 0 5px;
+  }
+ 
+  .creators:first-child {
+    float: left;  
+  }
+
+  .created {
+    float: right;
+  }
+
+
+  #transition {
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out .5s;
+  }
+
+  @media only screen and (max-width: 1036px) {
+    body > * {
+      display: none;
+      -webkit-transition: all 1s ease-in-out .25s;
+    }
+  }
+
+  @media only screen and (max-width: 1036px) {
+    body {
+      background: #ff0000;
+    }
+
+    #transition {
+      display: table;
+      opacity: 1;
+      margin: 100px auto;
+      text-align: center;
+      font-size: 3em;
+      /*-webkit-transition: all 1s ease-in-out .25s;*/
+    }
+  }
+

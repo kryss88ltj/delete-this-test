@@ -1,0 +1,577 @@
+/**************/
+/* Background */
+/**************/
+
+  body {background: #f0d2e8; overflow-y: scroll;}
+
+  .main-section {
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    /*overflow-x: hidden;*/
+    /*overflow-y: scroll;*/
+    float: left;
+    /*height: 600px;*/
+  } 
+  
+/***********************/
+/*   Side Navigation   */
+/***********************/
+
+.left-nav, .right-nav {
+  height: auto;  
+  width: 7.5%;  
+  /*border: 1px solid #fff;*/
+  font-size: 24px;
+  color: #fff;
+  font-family: "brandon_grotesquemedium";
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.left-nav {
+  background: #6f2c91;
+  float: left;
+}
+
+.right-nav {
+  background: #ec008c;
+  float: right;
+}
+
+.left-nav a, .right-nav a {
+  display: block;
+}
+
+  .left-nav h5, .right-nav  h5 {
+    text-transform: uppercase;
+    font-family: "brandon_grotesquethin";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 150px;
+    /*padding-left: 5%;*/
+    margin: .75em auto -5px;
+    letter-spacing: .08em;
+    line-height: 24px;
+  }
+
+  .left-nav img, 
+  .right-nav img, 
+  .left-nav h4, 
+  .right-nav h4,
+  .left-nav h5,
+  .right-nav h5 {
+    display: none;
+    -webkit-transition: all .2 linear .9;
+    overflow: visible;
+  }
+
+.right-nav-icon {
+  margin-top: 15px;
+}
+
+/*.left-nav:hover {
+  width: 15%;
+}
+
+.left-nav:hover + .right-nav {
+  width: 0;
+}
+
+.right-nav:hover {
+    width: 15%;
+}
+
+.right-nav:hover ~ .left-nav {
+  width: 0%;
+}*/
+
+/***********************/
+/* Main Middle Section */
+/***********************/
+
+.main-middle-section {
+  float: left;
+  width: 84.9%;
+  overflow: hidden;
+  margin-left: .03%
+}
+
+/***********************/
+/* Title and Bourges # */
+/***********************/
+
+  .title {
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 80pt;
+    text-transform: uppercase;
+    color: #b41e8e;
+    margin: 30px 0 20px 1%;
+    float: left;
+    line-height: 88px;  
+  }
+
+  .bourgesBlock {
+    position: relative;
+    float: right;
+    color: #b41e8e;
+    font-family: 'brandon_grotesqueblack';
+    text-transform: uppercase;
+    margin: 45px 110px 0 0;
+    line-height: 1;
+  }
+
+  .number {
+    font-family: 'brandon_grotesque_regularRg';
+    position: absolute;
+    top: 37px;
+    left: 53px;
+    display: inline-block;
+    margin: 0;
+    
+  }
+
+  .numeral {
+    /*position: absolute;*/
+    font-size: 60pt;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .bourges {
+    font-family: 'brandon_grotesque_regularRg';
+    position: absolute;
+    top: 37px;
+    right: 55px;
+    margin: 0;
+    margin-bottom: 14px;
+    display: inline-block;
+  }
+
+
+/***********************/
+/*   Percentage Bar    */
+/***********************/
+
+  .percentageBar {
+    float: left;
+    width: 100%;
+  }
+  .percentageBar * {  
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 11pt;  
+    line-height: 39px;
+    text-align: center;
+    float:left;
+    display: block;
+    width: 10%;
+    color: #fff;
+    height: 2.5em;
+  }
+
+  .top-border {
+    width: 100% !important;
+    height: 6px;
+    background: #b41e8e;
+  }
+
+  .ninety {background: #b82994;}
+  .eighty {background: #bc359a;}
+  .seventy {background: #c34ba5;}
+  .sixty {background: #cb62b0;}
+  .fifty {background: #d278bb;}
+  .forty {background: #da8fc7;}
+  .thirty {background: #e1a5d2;}
+  .twenty {background: #e8bbdd;}
+  .ten {background: #f0d2e8;}
+  .five {background: #f7e8f3;}
+
+
+/***********************/
+/*   Description Bar   */
+/***********************/
+
+  .desc-bar {
+    position: relative;
+    float: left;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 6.875em;
+    text-align: center;
+    background: url(../img/mauve/topbarbgs/mauve-bg.png);
+    display: block;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  
+  .desc-bar.collapsed {
+    height: 24px;
+    overflow-y: hidden;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+
+  .desc-text {
+    /*float: left;*/
+    margin: 0 auto;
+    margin-top: .85em;
+    /*display: block;*/
+    font-family: 'brandon_grotesquethin';
+    font-size: 26pt;
+    color: #fff;
+  }
+
+  .line1 {
+    position: absolute;
+    top: 20px;
+    left: 28.25%;
+    margin: 0 auto;
+    display: none;
+  }
+
+   .line2 {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 28.25%;
+    display: none;
+  }
+
+.down-arrow {
+  position: absolute;
+  bottom: 6px;
+  left: 300px;
+  width: 0; 
+  height: 0;
+  border-top: 18px solid #f0d2e8;
+  border-left: 16px solid transparent; 
+  border-right: 16px solid transparent; 
+}
+
+  .arrow {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+  }
+
+  .arrow-position {
+    bottom: -1px;
+  }
+
+/***********************/
+/*     Icon Section    */
+/***********************/
+
+  /***** Top ******/
+  .icons {
+    background: #f3dbed;
+    /*width: 17.4%;*/
+    width: 187px;
+    float: left;
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 9.83pt;
+    color: #b41e8e;
+    text-transform: uppercase;
+    margin: 20px 20px 20px 5px;
+  }
+
+  .top-icons {
+    margin: 20px auto 25px;
+    display: table;
+    text-align: center; 
+  }
+
+    .top-icons img {
+      width: 89%;
+    }
+
+  .top-right-iconset,
+  .top-left-iconset,
+  .bottom-left-iconset, 
+  .bottom-right-iconset {
+    position: relative; 
+    float: left;
+    width: 42%;
+  }
+
+  .top-right-iconset {margin-bottom: 2em;}
+  .top-left-iconset,
+  .bottom-left-iconset {
+    margin-left: 7%;
+  }
+
+  /*.top-icon1,
+  .top-icon3 {
+    margin-right: 7px;
+  }
+
+  .icon-text {
+    margin: 0px 5px 10px 5px !important;
+    display: inline-block;
+    margin: 0;
+    /*width: 40%;*/
+  /*}
+
+  .left-text1 {margin-left: -11px !important; text-align: center; width: 40%;}
+  .right-text1 {margin-left: 28px !important; position: relative; top: -19px;}
+  .left-text2 {margin-left: 6px !important;}
+  .right-text2 {margin-left: 19px !important;}*/
+
+  /***** Bottom ******/
+
+  .bottom-icons {
+    margin: 0 0 0 10px;
+    text-align: center;
+    line-height: 1.7;
+    color: #fff;
+    font-family: 'brandon_grotesqueblack';
+    font-size: 30px;
+  }
+
+  .left-sqs {
+    width: 71%;
+    float: left;
+  }
+
+  .upper-left-sq,
+  .upper-right-sq,
+  .bottom-left-sq,
+  .bottom-right-sq {
+    float: left;
+    height: 57px;
+    width: 57px;
+    border-radius: 5px;
+  }
+
+  .upper-left-sq {
+    margin: 0 9px 7px 0;
+    background: #ed1c24;
+  }
+  
+
+  /**** CMYK Colors ****/
+
+  .upper-right-sq * {
+    width: 50%;
+    float: left;
+  }
+
+  .upper-right-sq {
+    margin: 0 0 7px;
+    font-size: 16px;
+    line-height: 1.813;
+
+  }
+
+  .sm-sq1 {background: #00aeef; border-top-left-radius: 5px;}
+  .sm-sq2 {background: #fff200; border-top-right-radius: 5px;}
+  .sm-sq3 {background: #ec008c; border-bottom-left-radius: 5px;}
+  .sm-sq4 {background: #231f20; border-bottom-right-radius: 5px;}
+
+  .bottom-left-sq {
+    margin: 0 9px 0 0;
+    background: #50b848;
+  }
+
+  .bottom-right-sq {
+    background: #00aeef;
+  }
+
+  .right-col {
+    float: left;
+    margin: 0 0 0 3px;
+  }  
+
+  .right-col * {
+    height: 36.6px;
+    width: 36.6px;
+    border-radius: 5px;
+    margin-bottom: 4.5px;
+  }
+
+  /**** Primary Colors ****/
+
+  .a, .b, .c {
+    line-height: 1.9;
+    font-size: 0.7em;
+    font-family: 'brandon_grotesquebold';
+  }
+
+  .a {
+    background: #ff0000;
+    margin-bottom: 6.5px;
+  }
+
+  .b {
+    background: #00ff00;
+  }
+
+  .c {
+    background: #0000ff;
+  }
+
+/***********************/
+/*  Main Text Section  */
+/***********************/
+
+  .main-text {
+    float: left;
+    width: 55%;
+    color: #b41e8e;
+    font-size: 1.2em;
+    font-family: 'brandon_grotesquelight';
+    line-height: 2.2;
+    margin-top: 7px;
+    text-align: justify;
+  }
+
+/******************************/
+/*  Infographic on Far Right  */
+/******************************/
+
+.right-infographic {
+  float: left;
+  background: #8c0f37;
+  /*width: 21%;*/
+  width: 225px;
+  margin: 20px 15px 20px 25px;
+  text-align: center;
+}
+.right-infographic h1 {
+  font-family: 'brandon_grotesquebold';
+  font-size: 25px;
+  color: #fff;  
+  text-transform: uppercase;
+  /*text-align: center;*/
+  margin: 20px 10px 0px;
+}
+  .right-infographic h1 span {
+    font-size: 30px;
+  }
+
+.right-infographic p {
+  margin: 0px 0 10px 17%;
+  width: 65%;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'brandon_grotesquelight';
+}
+
+.right-infographic img {
+  margin: 10px 0 10px 0%;
+}
+
+.right-infographic img.glasses {
+  margin: 6px 0 27px;
+  width: 54%;
+}
+
+/***********************/
+/*  Bottom Page Break  */
+/***********************/
+
+.page-break {
+  border-bottom: 2px solid #b41e8e;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+}
+
+  .page-break img {
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    width: 72px;
+    background-color: #f0d2e8;
+    position: absolute;
+    left: 47.2%;
+    top: 10px;
+
+  }
+
+
+/***********************/
+/*    Media Queries    */
+/***********************/
+
+@media only screen and (max-width: 1263px) {
+  .main-text {
+    width: 54%;
+  }
+}
+
+@media only screen and (max-width: 1236px) {
+  .main-text {
+    width: 53%;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .main-text {
+    width: 52%;
+  }
+}
+
+@media only screen and (max-width: 1185px) {
+  .main-text {
+    width: 51%;
+  }
+}
+
+@media only screen and (max-width: 1161px) {
+  .main-text {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1138px) {
+  .main-text {
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 1116px) {
+  .main-text {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .main-text {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .main-text {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .main-text {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1036px) {
+  .main-text {
+    width: 44%;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,20 @@
+1.  mauve
+2.  magenta
+3.  crimson
+4.  scarlet
+5.  poster red 
+6.  coral
+7.  orange
+8.  amber
+9.  gold
+10. yellow
+11. lime
+12. leaf green
+13. sea green
+14. emerald
+15. teal 
+16. cyan
+17. sky blue 
+18. ultramarine
+19. violet
+20. purple

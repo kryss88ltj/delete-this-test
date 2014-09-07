@@ -1,0 +1,13 @@
+.home {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -149px;
+  right: 2%;
+  z-index: 1001;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.home:hover {
+  top: 1%;
+}

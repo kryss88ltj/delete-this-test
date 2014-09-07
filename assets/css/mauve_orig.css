@@ -1,0 +1,434 @@
+/**************/
+/* Background */
+/**************/
+
+  body {background: #f0d2e8;}
+
+  .main-section {
+    /*position: relative;*/
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    float: left;
+  } 
+  
+/***********************/
+/*   Side Navigation   */
+/***********************/
+
+.left-nav, .right-nav {
+  /*height: 93%;*/
+  width: 15%;
+  border: 1px solid #fff;
+  font-size: 24px;
+  color: #fff;
+  font-family: "brandon_grotesquemedium";
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all .2s ease-in-out;
+  padding-top: 5%;
+  margin: 0;
+  float: left;
+  overflow: hidden;
+}
+
+  .left-nav h5, .right-nav  h5 {
+    text-transform: uppercase;
+    font-family: "brandon_grotesquethin";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 89%;
+    padding-left: 5%;
+    margin: .75em 0;
+    letter-spacing: .08em;
+    line-height: 24px;
+  }
+
+.left-nav:hover {
+  /*position: relative;
+  left: 0;*/
+  /*height: 90vh;*/
+  width: 20%;
+}
+
+.left-nav:hover + .right-nav {
+  width: 0%;
+}
+
+.right-nav:hover {
+  /*height: 90vh;*/
+  /*right: 0;*/
+}
+
+.left-nav {
+  /*position: relative;
+  left: -14.5%;*/
+  z-index: 1000;
+  background: #ec008c;
+}
+
+.right-nav {
+  /*position: relative;
+  right: -14.5%;*/
+  z-index: 1000;
+  background: #ec008c;
+}
+
+/***********************/
+/* Main Middle Section */
+/***********************/
+
+.main-middle-section {
+  float: left;
+  width: auto;
+}
+
+/***********************/
+/* Title and Bourges # */
+/***********************/
+
+  .title {
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 80pt;
+    text-transform: uppercase;
+    color: #b41e8e;
+    margin: 30px 0 20px 1%;
+    float: left;
+    line-height: 88px;  
+  }
+
+  .bourgesBlock {
+    position: relative;
+    float: right;
+    color: #b41e8e;
+    font-family: 'brandon_grotesqueblack';
+    text-transform: uppercase;
+    margin: 45px 110px 0 0;
+    line-height: 1;
+  }
+
+  .number {
+    position: absolute;
+    top: 37px;
+    left: 55px;
+    display: inline-block;
+    margin: 0;
+    
+  }
+
+  .numeral {
+    /*position: absolute;*/
+    font-size: 60pt;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .bourges {
+    position: absolute;
+    top: 37px;
+    right: 55px;
+    margin: 0;
+    margin-bottom: 14px;
+    display: inline-block;
+  }
+
+
+/***********************/
+/*   Percentage Bar    */
+/***********************/
+
+  .percentageBar {
+    float: left;
+    width: 100%;
+  }
+  .percentageBar * {  
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 14pt;  
+    line-height: 47px;
+    text-align: center;
+    float:left;
+    display: block;
+    width: 10%;
+    color: #fff;
+    height: 2.5em;
+  }
+
+  .top-border {
+    width: 100% !important;
+    height: 6px;
+    background: #b41e8e;
+  }
+
+  .ninety {background: #b82994;}
+  .eighty {background: #bc359a;}
+  .seventy {background: #c34ba5;}
+  .sixty {background: #cb62b0;}
+  .fifty {background: #d278bb;}
+  .forty {background: #da8fc7;}
+  .thirty {background: #e1a5d2;}
+  .twenty {background: #e8bbdd;}
+  .ten {background: #f0d2e8;}
+  .five {background: #f7e8f3;}
+
+
+/***********************/
+/*   Description Bar   */
+/***********************/
+
+  .desc-bar {
+    position: relative;
+    float: left;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 6.875em;
+    text-align: center;
+    background: url(../img/mauve/topbarbgs/mauve-bg.png);
+    display: block;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  
+  .desc-bar.collapsed {
+    height: 24px;
+    overflow-y: hidden;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+
+  .desc-text {
+    /*float: left;*/
+    margin: 0 auto;
+    margin-top: 0.625em;
+    /*display: block;*/
+    font-family: 'brandon_grotesquethin';
+    font-size: 30pt;
+    color: #fff;
+  }
+
+  .line1 {
+    position: absolute;
+    top: 20px;
+    left: 28.25%;
+    margin: 0 auto;
+    display: none;
+  }
+
+   .line2 {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 28.25%;
+    display: none;
+  }
+
+.down-arrow {
+  position: absolute;
+  bottom: 6px;
+  left: 300px;
+  width: 0; 
+  height: 0;
+  border-top: 18px solid #f0d2e8;
+  border-left: 16px solid transparent; 
+  border-right: 16px solid transparent; 
+}
+
+  .arrow {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+  }
+
+  .arrow-position {
+    bottom: -1px;
+  }
+
+/***********************/
+/*     Icon Section    */
+/***********************/
+
+  /***** Top ******/
+  .icons {
+    background: #f3dbed;
+    width: 17.4%;
+    float: left;
+    font-family: 'brandon_grotesque_regularRg';
+    font-size: 9.83pt;
+    color: #b41e8e;
+    text-transform: uppercase;
+    margin: 20px 20px 20px 5px;
+  }
+
+  .top-icons {
+    margin: 20px auto 25px;
+    display: table;
+    text-align: center; 
+  }
+
+  .top-icon1,
+  .top-icon3 {
+    margin-right: 7px;
+  }
+
+  .icon-text {
+    margin: 0px 5px 10px 5px !important;
+    display: inline-block;
+    margin: 0;
+    /*width: 40%;*/
+  }
+
+  .left-text1 {margin-left: -11px !important; text-align: center; width: 40%;}
+  .right-text1 {margin-left: 28px !important; position: relative; top: -19px;}
+  .left-text2 {margin-left: 6px !important;}
+  .right-text2 {margin-left: 19px !important;}
+
+  /***** Bottom ******/
+
+  .bottom-icons {
+    margin: 0 0 0 10px;
+    text-align: center;
+    line-height: 0;
+    color: #fff;
+    font-family: 'brandon_grotesqueblack';
+    font-size: 30px;
+  }
+
+  .left-sqs {
+    width: 71%;
+    float: left;
+  }
+
+  .upper-left-sq,
+  .upper-right-sq,
+  .bottom-left-sq,
+  .bottom-right-sq {
+    float: left;
+    height: 65px;
+    width: 66px;
+    border-radius: 5px;
+  }
+
+  .upper-left-sq {
+    margin: 0 9px 7px 0;
+    background: #ed1c24;
+  }
+  
+
+  /**** CMYK Colors ****/
+
+  .upper-right-sq * {
+    width: 50%;
+    float: left;
+  }
+
+  .upper-right-sq {
+    margin: 0 0 7px;
+    font-size: 19px;
+    line-height: 1.7;
+
+  }
+
+  .sm-sq1 {background: #00aeef; border-top-left-radius: 5px;}
+  .sm-sq2 {background: #fff200; border-top-right-radius: 5px;}
+  .sm-sq3 {background: #ec008c; border-bottom-left-radius: 5px;}
+  .sm-sq4 {background: #231f20; border-bottom-right-radius: 5px;}
+
+  .bottom-left-sq {
+    margin: 0 9px 0 0;
+    background: #50b848;
+  }
+
+  .bottom-right-sq {
+    background: #00aeef;
+  }
+
+  .right-col {
+    float: left;
+    margin: 0 0 0 3px;
+  }  
+
+  .right-col * {
+    height: 42px;
+    width: 42px;
+    border-radius: 5px;
+    margin-bottom: 4.5px;
+  }
+
+  /**** Primary Colors ****/
+
+  .a, .b, .c {
+    line-height: 1.8;
+    font-size: 0.8em;
+    font-family: 'brandon_grotesquebold';
+  }
+
+  .a {
+    background: #ff0000;
+    margin-bottom: 6.5px;
+  }
+
+  .b {
+    background: #00ff00;
+  }
+
+  .c {
+    background: #0000ff;
+  }
+
+/***********************/
+/*  Main Text Section  */
+/***********************/
+
+  .main-text {
+    float: left;
+    width: 55%;
+    color: #b41e8e;
+    font-size: 20px;
+    font-family: 'brandon_grotesquelight';
+    line-height: 2.2;
+    margin-top: 7px;
+  }
+
+/******************************/
+/*  Infographic on Far Right  */
+/******************************/
+
+.right-infographic {
+  float: left;
+  background: #8c0f37;
+  width: 21%;
+  margin: 20px 15px 20px 25px;
+  text-align: center;
+}
+.right-infographic h1 {
+  font-family: 'brandon_grotesquebold';
+  font-size: 27px;
+  color: #fff;  
+  text-transform: uppercase;
+  /*text-align: center;*/
+  margin: 20px 10px 0px;
+}
+  .right-infographic h1 span {
+    font-size: 35px;
+  }
+
+.right-infographic p {
+  margin: 0px 0 10px 17%;
+  width: 65%;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'brandon_grotesquelight';
+}
+
+.right-infographic img {
+  margin: 10px 0 10px 0%;
+}
+
+.right-infographic img.glasses {
+  margin: 30px 0 40px;
+}
